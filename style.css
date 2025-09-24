@@ -1,0 +1,107 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;          
+    margin: 0;
+    flex-direction: column;
+}
+.main{
+    display: flex;
+    /* margin: 3px; */
+    /* padding: 5px; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 290px;
+    margin: auto;
+    align-self: center;
+    background-color: #27C5F5;
+    padding-bottom: 4px;
+}
+
+h4{
+    margin: 2px;
+}
+h5{
+    text-align: center;
+}
+.btn{
+    height: 90px;
+    width: 90px;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 5px;
+}
+.parente{
+    display: flex;
+}
+.flash{
+    background-color: white !important;
+}
+.yellow{
+    background-color: rgb(215, 225, 67);
+}
+.pink{
+    background-color: rgb(247, 0, 255);
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: rgb(247, 78, 87);
+}
+.userflash{
+    background-color: rgb(13, 255, 0);
+}
+.rules{
+     display: flex;
+    /* margin: 3px; */
+    /* padding: 5px; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    width: auto;
+    margin: auto;
+    align-self: center;
+    background-color: #27a3f5;
+    padding-bottom: 4px;
+}
+@media (max-width: 744px){
+    .rules{
+        width: 95%;
+        margin: 3px;
+    }
+}
+@media (max-width: 484px){
+    .rules h1{
+        text-align: center;
+    }
+}
+@media (max-width: 330px){
+    .btn{
+        width: 20vw;
+        height: 20px;
+    }
+}
+@media (max-width: 300px){
+    .main{
+        width: 98%;
+        /* margin-top: 25vh; */
+        margin-top: 35vh;
+}
+    .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        
+    }
+}
+
+
