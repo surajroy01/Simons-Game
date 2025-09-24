@@ -11,7 +11,7 @@ let level =0
 let body=document.querySelector("body")
 let h5=document.querySelector("h5")
 let h4=document.querySelector("h4")
-let b=body.addEventListener("keypress",function(){ 
+let b=body.addEventListener("click",function(){ 
     if(started==false)
     {
         console.log("game started")
@@ -88,8 +88,9 @@ function check(ind){
     }
     else{
         console.log("alag h")
-        h5.innerHTML=`GAME OVER MC!<br>phir se khelna hai to daba do`
+        h5.innerHTML=`GAME OVER!<br>To play again press any key`
         reSet()
     }
 }
+
         
