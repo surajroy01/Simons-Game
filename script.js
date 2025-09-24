@@ -8,12 +8,14 @@ let started=false
 let level =0
 
 //for starting game
-let body=document.querySelector("body")
+let button=document.querySelector("button")
 let h5=document.querySelector("h5")
 let h4=document.querySelector("h4")
-let b=body.addEventListener("doubleclick",function(){ 
+let b=button.addEventListener("click",function(){
+    
     if(started==false)
     {
+        
         console.log("game started")
         
          started=true
@@ -34,7 +36,7 @@ function LevelUp(){
     //after  starting changing level
     level++
     h5.innerText=`Level ${level}`
-    h4.innerHTML=`Your Score : ${level*10}`
+    h4.innerHTML=`Your Score : ${(level-1)*10}`
 
     //selecting random btn
     let randIdx=Math.floor(Math.random()*btns.length)
@@ -55,7 +57,7 @@ function btnFlash1(pbtn){
 }
 
 //pressing i.e user will press the button/box
-function btnPress(){
+function btnPress(event){
     let pbtn=this
     btnFlash1(pbtn)
     userClr=pbtn.getAttribute("id")
@@ -88,10 +90,8 @@ function check(ind){
     }
     else{
         console.log("alag h")
-        h5.innerHTML=`GAME OVER!<br>Press any key to start again`
+        h5.innerHTML=`GAME OVER !<br>Press the button to start again`
         reSet()
     }
 }
-
         
-
