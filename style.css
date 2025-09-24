@@ -24,6 +24,7 @@ body{
     flex-direction: column;
     border: 2px solid black;
     width: 290px;
+    height: 430px;
     margin: auto;
     align-self: center;
     background-color: #27C5F5;
@@ -96,12 +97,15 @@ h5{
         width: 20vw;
         height: 20px;
     }
+    .main{
+        height:430px;
 }
 @media (max-width: 300px){
     .main{
         width: 98%;
         /* margin-top: 25vh; */
         margin-top: 35vh;
+        height:430px;
 }
     .body{
         display: flex;
@@ -112,5 +116,6 @@ h5{
         
     }
 }
+
 
 
