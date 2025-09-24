@@ -11,7 +11,7 @@ let level =0
 let body=document.querySelector("body")
 let h5=document.querySelector("h5")
 let h4=document.querySelector("h4")
-let b=body.addEventListener("click",function(){ 
+let b=body.addEventListener("doubleclick",function(){ 
     if(started==false)
     {
         console.log("game started")
@@ -88,9 +88,10 @@ function check(ind){
     }
     else{
         console.log("alag h")
-        h5.innerHTML=`GAME OVER!<br>To play again press any key`
+        h5.innerHTML=`GAME OVER!<br>Press any key to start again`
         reSet()
     }
 }
 
         
+
